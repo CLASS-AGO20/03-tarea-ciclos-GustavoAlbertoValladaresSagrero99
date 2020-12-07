@@ -27,6 +27,24 @@ export default class App {
         return suma;
       }
 
+      esPrimo(numero)
+      {
+          let i = 0;
+
+        do
+        {
+            if (numero%2 !=0)
+            {
+                return true;
+            }else{
+                return false;
+            }
+
+            i++;
+        }while(i<=numero);
+
+      }
+
 }
 
 
@@ -35,3 +53,4 @@ let app = new App();
 
 console.log(app.sumatoriaSerieUno(10));
 console.log(app.sumatoriaSerieDos(12));
+console.log(app.esPrimo(43));
