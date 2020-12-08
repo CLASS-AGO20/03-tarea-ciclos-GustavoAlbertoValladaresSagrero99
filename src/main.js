@@ -45,7 +45,7 @@ export default class App {
 
       }
 
-      obtenerMultiplos(inicio, fin)
+      convertirAString(inicio, fin)
       {
 
         let cadena = "";
@@ -72,4 +72,4 @@ let app = new App();
 console.log(app.sumatoriaSerieUno(10));
 console.log(app.sumatoriaSerieDos(12));
 console.log(app.esPrimo(43));
-console.log(app.obtenerMultiplos(3,21));
+console.log(app.convertirAString(3,21));
