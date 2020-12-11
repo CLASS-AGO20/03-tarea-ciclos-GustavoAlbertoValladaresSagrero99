@@ -44,6 +44,24 @@ export default class App {
             i++;
         }while(i<=numero);
       
+      }
+      
+      obtenerMultiplos(inicio, fin)
+      {
+      
+        let cadena = "";
+      
+          do
+          {
+            if(inicio%3==0)
+            {
+                cadena +=inicio;
+            }
+      
+            inicio++;
+          }while(inicio<=fin);
+      
+          return cadena;
       }     
 
 }
@@ -54,3 +72,5 @@ let app = new App();
 
 console.log(app.sumatoriaSerieUno(10));
 console.log(app.sumatoriaSerieDos(12));
+console.log(app.esPrimo(9));
+console.log(app.obtenerMultiplos(3,21));
