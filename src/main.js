@@ -27,7 +27,24 @@ export default class App {
         return suma;
       }
 
-
+      esPrimo(numero)
+      {
+          let i = 0;
+      
+      
+        do
+        {
+            if (numero%2 !=0)
+            {
+                return true;
+            }else{
+                return false;
+            }
+      
+            i++;
+        }while(i<=numero);
+      
+      }     
 
 }
 
